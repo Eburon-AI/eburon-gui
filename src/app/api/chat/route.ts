@@ -31,6 +31,11 @@ export async function POST(req: Request) {
       ...convertToCoreMessages(initialMessages),
       { role: 'user', content: messageContent },
     ],
+    maxTokens: 2048,
+    async onChunk(chunk) {
+      // Optional: log the chunk to the console
+      // console.log("Received chunk:", chunk);
+    },
   });
 
   return result.toDataStreamResponse();

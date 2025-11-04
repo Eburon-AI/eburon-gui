@@ -148,7 +148,7 @@ export default function PullModelForm() {
                 <Input
                   {...field}
                   type="text"
-                  placeholder="eburon/eburon"
+                  placeholder="eburon/eburon:latest"
                   value={field.value || ""}
                 />
               </FormControl>

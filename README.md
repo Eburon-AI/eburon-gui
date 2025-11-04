@@ -1,14 +1,14 @@
 <div align="center">
-  <img src="ollama-nextjs-ui.gif">
+  <img src="https://github.com/Eburon-AI/eburon-gui/assets/3624847/b29bbc9a-ff3e-420a-a06e-50775ed7f0b0">
 </div>
 
 <h1 align="center">
-  Fully-featured web interface for Ollama LLMs
+  Eburon GUI
 </h1>
 
 <div align="center">
   
-![GitHub Repo stars](https://img.shields.io/github/stars/jakobhoeg/nextjs-ollama-llm-ui)
+![GitHub Repo stars](https://img.shields.io/github/stars/Eburon-AI/eburon-gui)
   
 </div>
 
@@ -32,7 +32,7 @@ This project aims to be the easiest way for you to get started with LLMs. No ted
 
 # Preview
 
-https://github.com/jakobhoeg/nextjs-ollama-llm-ui/assets/114422072/08eaed4f-9deb-4e1b-b87a-ba17d81b9a02
+https://github.com/Eburon-AI/eburon-gui/assets/3624847/b29bbc9a-ff3e-420a-a06e-50775ed7f0b0
 
 # Requisites ⚙️
 
@@ -48,13 +48,13 @@ To use the web interface, these requisites must be met:
 - **If Ollama is running on your pc**:
 
 ```
-docker run -d -p 8080:3000 --add-host=host.docker.internal:host-gateway -e OLLAMA_URL=http://host.docker.internal:11434 --name nextjs-ollama-ui --restart always jakobhoeg/nextjs-ollama-ui:latest
+docker run -d -p 8080:3000 --add-host=host.docker.internal:host-gateway -e OLLAMA_URL=http://host.docker.internal:11434 --name eburon-gui --restart always ghcr.io/eburon-ai/eburon-gui:latest
 ```
 
 - **If Ollama is on a different server than the Web UI**:
 
 ```
-docker run -d -p 8080:3000 --add-host=host.docker.internal:host-gateway -e OLLAMA_URL=http://example.com:11434 --name nextjs-ollama-ui --restart always jakobhoeg/nextjs-ollama-ui:latest
+docker run -d -p 8080:3000 --add-host=host.docker.internal:host-gateway -e OLLAMA_URL=http://example.com:11434 --name eburon-gui --restart always ghcr.io/eburon-ai/eburon-gui:latest
 ```
 
 > You can also change the default 8080 port if you wish.
@@ -78,13 +78,13 @@ Alternatively you can install from source with the instructions below.
 **1. Clone the repository to a directory on your pc via command prompt:**
 
 ```
-git clone https://github.com/jakobhoeg/nextjs-ollama-llm-ui
+git clone https://github.com/Eburon-AI/eburon-gui
 ```
 
 **2. Open the folder:**
 
 ```
-cd nextjs-ollama-llm-ui
+cd eburon-gui
 ```
 
 **3. Rename the `.example.env` to `.env`:**
